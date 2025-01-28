@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="img2.png" style="height: 50px;width: 50px;" alt="Marmeto Logo">
+            <span>Marmeto</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="far fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <div class="image">
+        <img class="insideImg" src="img1.jpeg" alt="desk">
+        <div class="text-overlay">
+            <img src="img2.png" style="padding: 0;margin: 0;height: 80px;width: 80px;">
+            <h1 style="color: black;padding: 0;margin: 0;">Cart</h1>
+            <a href="#" style="color: black; display: inline;text-decoration: none;">Home ></a>
+            <a href="#" style="color: black; font-weight: 100; display: inline;text-decoration: none;">Cart</a>            
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Cart Totals</h3>
+            <p>Subtotal: <span id="subtotal">Rs. 0.00</span></p>
+            <p>Total: <span id="total">Rs. 0.00</span></p>
+            <button class="checkout-btn">Check Out</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <i class="fas fa-trophy"></i>
+                <div>
+                    <p class="title">High Quality</p>
+                    <p class="description">Crafted from top materials</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <p class="title">Warranty Protection</p>
+                    <p class="description">Over 2 years</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-shipping-fast"></i>
+                <div>
+                    <p class="title">Free Shipping</p>
+                    <p class="description">Order over 150 $</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-headset"></i>
+                <div>
+                    <p class="title">24/7 Support</p>
+                    <p class="description">Dedicated support</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
